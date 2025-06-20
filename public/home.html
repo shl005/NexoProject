@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEXOSPARK | Home</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+    <div id="wrapper">
+        <nav class="nav" id="navs">
+            <div class="nav-logo"><p>NEXOSPARK</p></div>
+            <div class="nav-menu" id="navMenu">
+                <ul>
+                    <li><a href="home.html" class="link active">Home</a></li>
+                    <li><a href="contact.html" class="link">Contact</a></li>
+                    <li><a href="services.html" class="link">Services</a></li>
+                    <li><a href="about.html" class="link">About</a></li>
+                </ul>
+            </div>
+            <div class="nav-menu-btn"><i class='bx bx-menu' onclick="toggleMenu()"></i></div>
+        </nav>
+        <div class="nav-spacer"></div>
+        <div id="Home">
+            <h1>Welcome to NEXOSPARK</h1>
+            <p class="subtitle">
+                Revolutionizing the skies with advanced drone technology.
+            </p>
+        
+            <div class="home-content">
+                <h2>Our Drone Solutions</h2>
+                <ul>
+                    <li><strong>Aerial Mapping:</strong> High-resolution maps for agriculture, construction, and land surveys.</li>
+                    <li><strong>Surveillance & Security:</strong> Real-time monitoring for safety and asset protection.</li>
+                    <li><strong>Crop Health Analysis:</strong> Multispectral imaging to boost farm productivity.</li>
+                    <li><strong>Delivery Services:</strong> Fast and efficient delivery to remote locations.</li>
+                    <li><strong>Custom Drone Software:</strong> Tailored applications for your unique needs.</li>
+                </ul>
+                <h2>Why Choose Us?</h2>
+                <ul>
+                    <li>Cutting-edge drone hardware and sensors</li>
+                    <li>Expert team with years of experience</li>
+                    <li>Reliable support and training</li>
+                    <li>Affordable packages for all industries</li>
+                </ul>
+                <p style="margin-top:24px;">
+                    Ready to elevate your business? <a href="services.html">Explore our services &rarr;</a>
+                </p>
+            </div>
+        </div>
+    </div>
+    <script>
+      function toggleMenu() {
+        document.getElementById("navMenu").classList.toggle("active");
+      }
+    </script>
+</body>
+</html>

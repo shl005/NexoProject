@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>NEXOSPARK | About</title>
-  <link rel="stylesheet" href="nex1.css" />
+  <link rel="stylesheet" href="home.css" />
   <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
   <style>
     body {
@@ -27,9 +27,13 @@
     }
 
     .nav-logo p {
-      color: white;
-      font-size: 24px;
-      font-weight: 600;
+      color: #ffd700;
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-shadow: 1px 2px 8px #000;
+  margin: 0;
+  padding: 0;
     }
 
     .nav-menu ul {
@@ -102,18 +106,14 @@
       <div class="nav-logo"><p>NEXOSPARK</p></div>
       <div class="nav-menu" id="navMenu">
         <ul>
-          <li><a href="nex2.html" class="link">Home</a></li>
+          <li><a href="home.html" class="link">Home</a></li>
           <li><a href="contact.html" class="link">Contact</a></li>
           <li><a href="services.html" class="link">Services</a></li>
           <li><a href="#" class="link active">About</a></li>
         </ul>
       </div>
-      <div class="nav-button">
-        <button class="btn" onclick="window.location.href='index.html'">Sign In</button>
-        <button class="btn" onclick="window.location.href='index.html'">Sign Up</button>
-      </div>
+      <div class="nav-menu-btn"><i class='bx bx-menu' onclick="toggleMenu()"></i></div>
     </nav>
-
     <section class="about-container">
       <h2>Our Story</h2>
       <p>
@@ -124,7 +124,6 @@
       </p>
     </section>
   </div>
-
   <script>
     function toggleMenu() {
       document.getElementById("navMenu").classList.toggle("active");

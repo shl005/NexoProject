@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-image: url("nexo-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  position: relative;
+}
+
+.bg-overlay {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.65); /* Darker for more contrast */
+  z-index: 0;
+  pointer-events: none;
+}
+
+#wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  min-height: unset;    /* Remove full viewport height */
+  padding-top: 0;       /* Remove extra top padding */
+  position: relative;
+  z-index: 1;
+}
+
+.nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      height: 80px;
+      background: rgba(0, 0, 0, 0.4);
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      z-index: 100;
+      backdrop-filter: blur(10px);
+    }
+
+.nav-logo p {
+  color: #ffd700;
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-shadow: 1px 2px 8px #000;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-menu ul {
+  display: flex;
+  list-style: none;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-menu ul li .link {
+  text-decoration: none;
+  color: #fff;
+  padding: 8px 22px;
+  font-weight: 500;
+  border-radius: 6px;
+  transition: background 0.2s, color 0.2s;
+  font-size: 1.1rem;
+}
+
+.link:hover, .link.active {
+  color: #ffd700;
+  background: none;
+  border-bottom: 2px solid #ffd700;
+}
+
+.nav-button .btn,
+.btn {
+  font-size: 1.1rem;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: 600;
+  border: none;
+  background: #ffd700;
+  color: #222;
+  margin-left: 10px;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+}
+
+
+
+.nav-button .btn:hover,
+.btn:hover {
+  background: #222;
+  color: #ffd700;
+}
+
+#Home {
+  padding-top: 100px; /* Ensures #Home content starts below the navbar */
+  /* padding-bottom: 32px; /* Optional: small bottom padding */
+  text-align: center;
+  color: #fff;
+  z-index: 2;
+  padding: 48px 28px;
+  max-width: 900px;           /* Increased width */
+  background: rgba(20,20,20,0.82);
+  border-radius: 22px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.35);
+  backdrop-filter: blur(2px);
+}
+
+#Home h1 {
+  font-size: 2.7rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-shadow: 2px 4px 16px #000, 0 2px 8px #ffd700;
+  margin-bottom: 20px;
+}
+
+#Home .subtitle {
+  font-size:1.3rem;
+  color:#ffd700;
+  margin-bottom:24px;
+  text-shadow: 1px 2px 8px #000;
+}
+
+#Home .btn.white-btn {
+  margin-bottom: 24px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  padding: 10px 32px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.18);
+}
+
+#Home .home-content {
+  margin-top:40px;
+  color: #fff;
+  font-size:1.13rem;
+  line-height:2;
+}
+
+#Home .home-content h2 {
+  color: #ffd700;
+  margin-bottom: 16px;
+  margin-top: 32px;
+  text-shadow: 1px 2px 8px #000;
+}
+
+#Home .home-content ul {
+  text-align: left;
+  margin: 0 auto 24px auto;
+  max-width: 500px;
+  padding-left: 20px;
+}
+
+#Home .home-content ul li {
+  margin-bottom: 8px;
+  list-style: disc;
+  text-shadow: 1px 1px 4px #000;
+}
+
+#Home .home-content a {
+  color: #ffd700;
+  text-decoration: underline;
+  transition: color 0.2s;
+  font-weight: 600;
+}
+
+#Home .home-content a:hover {
+  color: #fff;
+}
+
+.nav-spacer {
+  height: 80px; /* Same as your navbar height */
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  #Home {
+    margin-top: 100px;
+    padding: 24px 8px;
+    max-width: 98vw;
+  }
+}

@@ -193,9 +193,21 @@ header {
 .two-col {
   display: flex;
   justify-content: space-between;
-  color: #e4af00;
+  color: #bc9043;
   font-size: 14px;
   margin-top: 10px;
+}
+
+.two-col .two a {
+  color: #bc9043;
+  text-decoration: none;
+  font-weight: normal;
+  transition: color 0.2s;
+}
+
+.two-col .two a:hover {
+  color: #b42448;
+  text-decoration: underline;
 }
 .oauth{
   display: flex;
@@ -212,12 +224,4 @@ header {
 
 #Home{
   color: #fff;
-}
-#two{
-
-    color: #e4af00;
-}
-#two:hover{
-
-    color: #c50066;
 }
