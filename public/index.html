@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEXOSPARK | Registration</title>
+    <link rel="stylesheet" href="nex1.css">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+</head>
+<body>
+    <div id="wrapper" class="hidden">
+        <nav class="nav">
+            <div class="nav-logo"><p>NEXOSPARK</p></div>
+            <div class="nav-menu" id="navMenu">
+                <ul>
+                    <li><a href="#" class="link active">Home</a></li>
+                    <li><a href="contact.html" class="link">Contact</a></li>
+                    <li><a href="services.html" class="link">Services</a></li>
+                    <li><a href="about.html" class="link">About</a></li>
+                </ul>
+            </div>
+            <div class="nav-button">
+                <button class="btn white-btn" id="loginBtn">Sign In</button>
+                <button class="btn" id="registerBtn">Sign Up</button>
+            </div>
+            <div class="nav-menu-btn"><i class='bx bx-menu' onclick="toggleMenu()"></i></div>
+        </nav>
+
+        <div id="form-box">
+            <div class="card-container" id="cardContainer">
+                <!-- Login Form -->
+                <div class="card login-container">
+                    <form id="loginForm">
+                        <div class="top">
+                            <span>Don't have an account? <a href="#" id="si" >Sign Up</a></span>
+                            <header>Login</header>
+                        </div>
+                        <div class="input-box">
+                            <input type="email" id="loginEmail" placeholder="Email" required>
+                            <i class='bx bx-envelope'></i>
+                        </div>
+                        <div class="input-box">
+                            <input type="password" id="loginPassword" placeholder="Password" required>
+                            <span class="toggle-password" onclick="togglePassword('loginPassword')">👁️</span>
+                        </div>
+                        <div class="input-box">
+                            <input type="submit" value="Sign In" id="submit">
+                        </div>
+                        <div class="two-col">
+                            <div class="one"><input type="checkbox" id="login-check"><label for="login-check">Remember Me</label></div>
+                            <div ><label><a id="two" href="#">Forgot password?</a></label></div>
+                            
+                        </div>
+                        <div class="oauth">
+                           <button id="google-btn"><i class='bx bxl-google'></i> Login with Google </button>
+                            <!-- <button class="linkedin-btn"><i class='bx bxl-linkedin'></i> Login with LinkedIn</button>                        -->
+                        </div>
+                    </form>
+                </div>
+
+                <!-- Register Form -->
+                <div class="card register-container">
+                    <form id="registerForm">
+                        <div class="top">
+                            <span>Already have an account? <a href="#" id="lo">Login</a></span>
+                            <header>Sign Up</header>
+                        </div>
+                        <div class="two-forms">
+                            <div class="input-box"><input type="text" placeholder="Firstname" required><i class='bx bx-user'></i></div>
+                            <div class="input-box"><input type="text" placeholder="Lastname" required><i class='bx bx-user'></i></div>
+                        </div>
+                        <div class="input-box">
+                            <input type="email" id="regEmail" placeholder="Email" required>
+                            <i class='bx bx-envelope'></i>
+                        </div>
+                        <div class="input-box">
+                            <input type="password" id="regPassword" placeholder="Password" required>
+                            <span class="toggle-password" onclick="togglePassword('regPassword')">👁️</span>
+                        </div>
+                        <div class="input-box"><input type="submit" value="Register" id="submited"></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div id="Home" >
+            <h1>Home</h1>
+        </div>
+    </div>
+
+    <script  type="module" src="nex1.js"></script>
+    <!-- <script  src="firebase.js"></script> -->
+</body>
+</html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>NEXOSPARK | Contact</title>
+  <link rel="stylesheet" href="nex1.css" />
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  <style>
+    .contact-container {
+      max-width: 1100px;
+      margin: 120px auto 60px;
+      padding: 20px;
+      background: rgba(255,255,255,0.1);
+      border-radius: 12px;
+      backdrop-filter: blur(10px);
+      text-align: center;
+      color: #fff;
+    }
+
+    .contact-container h2 {
+      font-size: 36px;
+      margin-bottom: 10px;
+      color: #fff;
+    }
+
+    .contact-container p {
+      font-size: 16px;
+      color: #ccc;
+      margin-bottom: 40px;
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .contact-card {
+      background: rgba(255, 255, 255, 0.15);
+      padding: 20px;
+      border-radius: 10px;
+      backdrop-filter: blur(8px);
+      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+      transition: transform 0.3s;
+    }
+
+    .contact-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .contact-card i {
+      font-size: 32px;
+      color: blue;
+      background: rgba(255,255,255,0.1);
+      padding: 10px;
+      border-radius: 8px;
+      margin-bottom: 15px;
+    }
+
+    .contact-card h3 {
+      margin: 10px 0 5px;
+      color: black;
+    }
+
+    .contact-card p {
+      color: #ddd;
+      font-size: 14px;
+    }
+
+    @media (max-width: 768px) {
+      .contact-container {
+        margin-top: 100px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <nav class="nav">
+      <div class="nav-logo"><p>NEXOSPARK</p></div>
+      <div class="nav-menu" id="navMenu">
+        <ul>
+          <li><a href="nex2.html" class="link">Home</a></li>
+          <li><a href="#" class="link active">Contact</a></li>
+          <li><a href="services.html" class="link">Services</a></li>
+          <li><a href="about.html" class="link">About</a></li>
+        </ul>
+      </div>
+      <div class="nav-button">
+        <button class="btn white-btn" onclick="window.location.href='index.html'">Sign In</button>
+        <button class="btn" onclick="window.location.href='index.html'">Sign Up</button>
+      </div>
+      <div class="nav-menu-btn"><i class='bx bx-menu' onclick="toggleMenu()"></i></div>
+    </nav>
+
+    <section class="contact-container">
+      <h2>Contact Us</h2>
+      <p>Get in touch with us for any inquiries about our products, services, or educational programs.</p>
+
+      <div class="contact-grid">
+        <div class="contact-card">
+          <i class='bx bx-envelope'></i>
+          <h3>Email</h3>
+          <p>info@nexospark.in</p>
+        </div>
+        <div class="contact-card">
+          <i class='bx bx-phone'></i>
+          <h3>Phone</h3>
+          <p>+91 95449 55635</p>
+        </div>
+        <div class="contact-card">
+          <i class='bx bx-map'></i>
+          <h3>Address</h3>
+          <p>Kurichithanam P O, Kottayam, Kerala, India - 686634</p>
+        </div>
+        <div class="contact-card">
+          <i class='bx bx-time-five'></i>
+          <h3>Business Hours</h3>
+          <p>Mon - Fri: 9:00 AM - 6:00 PM</p>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <script>
+    function toggleMenu() {
+      const navMenu = document.getElementById("navMenu");
+      navMenu.classList.toggle("active");
+    }
+  </script>
+</body>
+</html>

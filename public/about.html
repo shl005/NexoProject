@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NEXOSPARK | About</title>
+  <link rel="stylesheet" href="nex1.css" />
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: url("nexo-bg.jpg") no-repeat center center / cover;
+    }
+
+    .nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      height: 80px;
+      background: rgba(0, 0, 0, 0.4);
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      z-index: 100;
+      backdrop-filter: blur(10px);
+    }
+
+    .nav-logo p {
+      color: white;
+      font-size: 24px;
+      font-weight: 600;
+    }
+
+    .nav-menu ul {
+      display: flex;
+      list-style: none;
+    }
+
+    .nav-menu ul li .link {
+      text-decoration: none;
+      color: white;
+      padding: 0 20px;
+      font-weight: 500;
+    }
+
+    .link.active {
+      color: #ffd700;
+      border-bottom: 2px solid #ffd700;
+    }
+
+    .nav-button .btn {
+      padding: 10px 20px;
+      margin-left: 10px;
+      border: none;
+      border-radius: 20px;
+      cursor: pointer;
+      font-weight: 600;
+      background: #fff;
+      color: #333;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: #ffd700;
+      color: #000;
+    }
+
+    .about-container {
+      max-width: 900px;
+      margin: 120px auto 60px;
+      padding: 30px;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 12px;
+      backdrop-filter: blur(10px);
+      color: #fff;
+    }
+
+    .about-container h2 {
+      font-size: 36px;
+      font-weight: 600;
+      margin-bottom: 20px;
+      color: #fff;
+    }
+
+    .about-container p {
+      font-size: 16px;
+      line-height: 1.6;
+      color: #ccc;
+    }
+
+    @media (max-width: 768px) {
+      .about-container {
+        margin: 100px 20px 60px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <nav class="nav">
+      <div class="nav-logo"><p>NEXOSPARK</p></div>
+      <div class="nav-menu" id="navMenu">
+        <ul>
+          <li><a href="nex2.html" class="link">Home</a></li>
+          <li><a href="contact.html" class="link">Contact</a></li>
+          <li><a href="services.html" class="link">Services</a></li>
+          <li><a href="#" class="link active">About</a></li>
+        </ul>
+      </div>
+      <div class="nav-button">
+        <button class="btn" onclick="window.location.href='index.html'">Sign In</button>
+        <button class="btn" onclick="window.location.href='index.html'">Sign Up</button>
+      </div>
+    </nav>
+
+    <section class="about-container">
+      <h2>Our Story</h2>
+      <p>
+        Founded in 2024, Nexospark emerged from a vision to revolutionize drone technology and make it accessible to everyone. What started as a small research project has grown into a global leader in drone education and innovation.
+      </p>
+      <p>
+        Today, we're proud to be at the forefront of drone technology, combining cutting-edge research with practical education to shape the future of unmanned aerial systems.
+      </p>
+    </section>
+  </div>
+
+  <script>
+    function toggleMenu() {
+      document.getElementById("navMenu").classList.toggle("active");
+    }
+  </script>
+</body>
+</html>
